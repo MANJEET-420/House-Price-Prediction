@@ -1,38 +1,108 @@
-# 🏠 House Price Prediction System
 
-An end-to-end Machine Learning solution designed to predict residential property prices based on housing attributes, structural dimensions, and quality metrics from the Ames Housing dataset. The project includes full exploratory data analysis (EDA), data preprocessing, feature encoding, hyperparameter-tuned gradient boosting, and an interactive Streamlit web dashboard.
+# 🏡 House Price Prediction
 
----
+A Machine Learning web application that predicts house prices based on property features using a trained model.
 
-## 📌 Project Overview
-- **Objective:** Accurate regression modeling to estimate house valuation based on 70+ raw structural and demographic attributes.
-- **Trained Model:** Optimized `GradientBoostingRegressor` evaluated against metrics like $R^2$ Score and Mean Absolute Error (MAE).
-- **Interactive UI:** Dynamic web application powered by **Streamlit** for real-time user input and automated inference.
-- **Robust Pipeline:** Resolves categorical feature mismatch dynamically via encoded feature alignment and missing-value imputation.
+## ✨ Features
 
----
+- Interactive house price prediction
+- Modern Streamlit dashboard
+- House price distribution visualization
+- Property details input form
+- Dataset explorer
+- Downloadable prediction report
+- Dataset statistics and insights
 
-## 🚀 Key Features
-* **Extensive EDA & Data Cleaning:** Missing value imputation, log-transformation of skewed numerical fields, and handling categorical ordinal/nominal features.
-* **One-Hot Encoding & Alignment:** Automated schema alignment handling test-time category mismatches across 479 encoded features.
-* **Model Benchmarking:** Comparative evaluation across Linear Regression, Ridge, Lasso, SVR, Random Forest, AdaBoost, XGBoost, and Gradient Boosting.
-* **Web Deployment:** User-friendly interface with dual-column inputs, default parameter bounds, and instantaneous price estimation.
+## 🛠️ Technologies Used
 
----
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Machine Learning
 
-## 🛠️ Tech Stack
-* **Language:** Python
-* **Machine Learning & Modeling:** Scikit-Learn, XGBoost, NumPy, SciPy
-* **Data Processing & Analysis:** Pandas
-* **Web Framework:** Streamlit
-* **Model Serialization:** Pickle
+## 📁 Project Structure
 
----
+```text
+House-Price-Prediction/
+│
+├── app.py
+├── train.csv
+├── house_proce_prediction4.pickle
+├── model_features.pkl
+├── requirements.txt
+└── README.md
+```
 
-## ⚙️ How to Run Locally
+## ⚙️ Installation
 
 ### 1. Clone the repository
-```bash
-git clone [https://github.com/](https://github.com/)<your-username>/house-price-prediction.git
-cd house-price-prediction
 
+```bash
+git clone https://github.com/MANJEET-420/House-Price-Prediction.git
+```
+
+### 2. Navigate to project directory
+
+```bash
+cd House-Price-Prediction
+```
+
+### 3. Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate virtual environment
+
+```bash
+venv\Scripts\activate
+```
+
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Run the Application
+
+```bash
+streamlit run app.py
+```
+
+## 🧠 How It Works
+
+1. The application loads the trained machine learning model.
+2. The user enters property details.
+3. Input features are processed.
+4. The trained model predicts the estimated house price.
+5. The result is displayed on the dashboard.
+
+## 📊 Dashboard Pages
+
+### Overview
+Displays housing dataset statistics and price distribution.
+
+### Price Estimator
+Allows users to enter property details and estimate the house price.
+
+### Data Explorer
+Provides dataset preview and download options.
+
+### Project Details
+Displays information about the project and technologies used.
+
+## ⚠️ Disclaimer
+
+This project is developed for educational and demonstration purposes.
+
+Predicted prices are estimates and should not be considered guaranteed market valuations.
+
+## 👨‍💻 Author
+
+Manjeet Kumar Yadav
+
+GitHub: https://github.com/MANJEET-420
